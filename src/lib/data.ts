@@ -194,56 +194,6 @@ export const projects: Project[] = [
 
 export const jobs: Job[] = [
   {
-    id: "senior-engineer-techcorp",
-    name: "Senior Software Engineer",
-    company: "TechCorp Inc.",
-    description:
-      "Led a team of 5 developers in building and maintaining a high-traffic e-commerce platform. Implemented microservices architecture, improved system performance by 40%, and reduced deployment time by 60% through CI/CD pipeline optimization. Mentored junior developers and conducted code reviews.",
-    logo: "/placeholder.svg?height=200&width=200",
-    startDate: "2021-06",
-    endDate: "Present",
-  },
-  {
-    id: "fullstack-developer-innovate",
-    name: "Full Stack Developer",
-    company: "Innovate Solutions",
-    description:
-      "Developed and maintained multiple client web applications using React, Node.js, and PostgreSQL. Implemented responsive designs, RESTful APIs, and authentication systems. Collaborated with UX/UI designers to implement pixel-perfect interfaces and optimize user experience.",
-    logo: "/placeholder.svg?height=200&width=200",
-    startDate: "2019-03",
-    endDate: "2021-05",
-  },
-  {
-    id: "frontend-engineer-webtech",
-    name: "Frontend Engineer",
-    company: "WebTech Systems",
-    description:
-      "Built interactive user interfaces using React and Redux. Implemented responsive designs, optimized application performance, and ensured cross-browser compatibility. Collaborated with backend developers to integrate APIs and improve data flow.",
-    logo: "/placeholder.svg?height=200&width=200",
-    startDate: "2017-09",
-    endDate: "2019-02",
-  },
-  {
-    id: "software-intern-datavis",
-    name: "Software Engineering Intern",
-    company: "DataVis Analytics",
-    description:
-      "Assisted in developing data visualization tools using D3.js and React. Created interactive charts and graphs for displaying complex datasets. Participated in agile development processes and contributed to codebase improvements.",
-    logo: "/placeholder.svg?height=200&width=200",
-    startDate: "2017-01",
-    endDate: "2017-06",
-  },
-  {
-    id: "research-assistant-university",
-    name: "Research Assistant",
-    company: "University Tech Lab",
-    description:
-      "Conducted research on machine learning algorithms for natural language processing. Implemented and evaluated various models for text classification and sentiment analysis. Co-authored a research paper published in a peer-reviewed journal.",
-    logo: "/placeholder.svg?height=200&width=200",
-    startDate: "2016-05",
-    endDate: "2016-12",
-  },
-  {
     id: "flex-operator-schreiber",
     name: "Flex Operator",
     company: "Schreiber Foods",
