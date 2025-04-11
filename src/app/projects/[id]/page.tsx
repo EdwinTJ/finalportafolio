@@ -9,13 +9,10 @@ import { ProjectShowcase } from "@/components/project-showcase";
 import { RelatedProjects } from "@/components/related-projects";
 
 type Params = {
-  params: {
-    id: string;
-  };
+  params: Promise<{ id: string }>;
 };
 
 export async function generateMetadata({ params }: Params) {
-  /* @next-codemod-ignore */
   const { id } = await params;
   const project = projects.find((p) => p.id === id);
 
@@ -37,7 +34,6 @@ export async function generateStaticParams() {
   }));
 }
 
-/* @next-codemod-ignore */
 export default async function ProjectPage({ params }: Params) {
   const { id } = await params;
 
