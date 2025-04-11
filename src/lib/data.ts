@@ -7,10 +7,8 @@ export type Project = {
   description: string;
   technology: string[];
   image: string;
-  startDate: string;
-  endDate: string;
+  category?: "school" | "tutorial" | "personal" | "work";
 };
-
 export type Job = {
   id: string;
   name: string;
@@ -37,8 +35,7 @@ export const projects: Project[] = [
       "Browser APIs",
     ],
     image: "/JS_Benchmark.png?height=600&width=800",
-    startDate: "2023-06",
-    endDate: "2023-08",
+    category: "personal",
   },
   {
     id: "ecommerce-platform",
@@ -55,8 +52,7 @@ export const projects: Project[] = [
       "AWS S3",
     ],
     image: "/placeholder.svg?height=600&width=800",
-    startDate: "2022-03",
-    endDate: "2022-08",
+    category: "tutorial",
   },
   {
     id: "task-management-app",
@@ -73,35 +69,16 @@ export const projects: Project[] = [
       "Vercel",
     ],
     image: "/placeholder.svg?height=600&width=800",
-    startDate: "2021-09",
-    endDate: "2022-01",
-  },
-  {
-    id: "ai-content-generator",
-    name: "AI Content Generator",
-    description:
-      "An AI-powered content generation tool that creates blog posts, social media content, and marketing copy based on user prompts. Includes content optimization suggestions and SEO analysis.",
-    technology: [
-      "Python",
-      "Flask",
-      "React",
-      "OpenAI API",
-      "Natural Language Processing",
-      "Docker",
-      "Google Cloud",
-    ],
-    image: "/placeholder.svg?height=600&width=800",
-    startDate: "2023-01",
-    endDate: "2023-05",
+    category: "personal",
   },
   {
     id: "fitness-tracking-app",
     name: "Fitness Tracking App",
     description:
-      "A mobile-first fitness tracking application that monitors workouts, nutrition, and progress. Features include custom workout plans, meal tracking, and progress visualization.",
+      "A web fitness tracking application that monitors workouts, nutrition, and progress. Features include custom workout plans, meal tracking, and progress visualization.",
     technology: [
-      "React Native",
-      "Firebase",
+      "React",
+      "Firebase Auth",
       "Redux",
       "Chart.js",
       "Node.js",
@@ -109,27 +86,9 @@ export const projects: Project[] = [
       "MongoDB",
     ],
     image: "/placeholder.svg?height=600&width=800",
-    startDate: "2022-06",
-    endDate: "2022-11",
+    category: "personal",
   },
-  {
-    id: "blockchain-voting-system",
-    name: "Blockchain Voting System",
-    description:
-      "A secure and transparent voting system built on blockchain technology. Ensures vote integrity, prevents double-voting, and provides real-time results with complete audit trail.",
-    technology: [
-      "Solidity",
-      "Ethereum",
-      "Web3.js",
-      "React",
-      "Node.js",
-      "Hardhat",
-      "IPFS",
-    ],
-    image: "/placeholder.svg?height=600&width=800",
-    startDate: "2023-03",
-    endDate: "2023-07",
-  },
+
   {
     id: "school-hex-game",
     name: "School Hex Game",
@@ -137,8 +96,7 @@ export const projects: Project[] = [
       "An interactive hex-based strategy game built as part of a college project. Features include AI opponents with multiple difficulty levels, customizable game boards, and a scoreboard system. Implemented game logic and user interface from scratch.",
     technology: ["Java", "Algorithm Design"],
     image: "/placeholder.svg?height=600&width=800",
-    startDate: "2021-10",
-    endDate: "2021-12",
+    category: "school",
   },
   {
     id: "school-priority-queue",
@@ -153,8 +111,7 @@ export const projects: Project[] = [
       "Documentation",
     ],
     image: "/placeholder.svg?height=600&width=800",
-    startDate: "2022-02",
-    endDate: "2022-04",
+    category: "school",
   },
   {
     id: "school-assembler",
@@ -169,8 +126,7 @@ export const projects: Project[] = [
       "Low-level Programming",
     ],
     image: "/placeholder.svg?height=600&width=800",
-    startDate: "2022-09",
-    endDate: "2022-11",
+    category: "school",
   },
 
   {
@@ -187,12 +143,21 @@ export const projects: Project[] = [
       "JSON",
     ],
     image: "/placeholder.svg?height=600&width=800",
-    startDate: "2023-09",
-    endDate: "2023-10",
+    category: "personal",
   },
 ];
 
 export const jobs: Job[] = [
+  {
+    id: "self-employed-web-developer",
+    name: "Web Developer",
+    company: "Self-employed / Freelance",
+    description:
+      "Designed and developed custom websites and web applications for various clients. Managed the entire project lifecycle from client consultation and requirements gathering to design, development, testing, and deployment. Implemented responsive designs, SEO optimization, and performance enhancements while maintaining regular communication with clients to ensure satisfaction.",
+    logo: "/placeholder.svg?height=200&width=200",
+    startDate: "2024-05",
+    endDate: "Present",
+  },
   {
     id: "flex-operator-schreiber",
     name: "Flex Operator",
