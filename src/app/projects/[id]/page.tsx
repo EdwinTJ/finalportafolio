@@ -15,6 +15,7 @@ type Params = {
 };
 
 export async function generateMetadata({ params }: Params) {
+  /* @next-codemod-ignore */
   const { id } = await params;
   const project = projects.find((p) => p.id === id);
 
@@ -36,6 +37,7 @@ export async function generateStaticParams() {
   }));
 }
 
+/* @next-codemod-ignore */
 export default async function ProjectPage({ params }: Params) {
   const { id } = await params;
 
