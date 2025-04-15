@@ -75,9 +75,7 @@ export default function Home() {
             <div>
               <p className="text-lg mb-6">
                 I'm a passionate software engineer with expertise in building
-                scalable web applications and distributed systems. With over 5
-                years of experience in the industry, I've worked on projects
-                ranging from small startups to large enterprise applications.
+                scalable web applications and distributed systems.
               </p>
               <p className="text-lg mb-6">
                 My technical skills include JavaScript/TypeScript, React,
@@ -87,7 +85,7 @@ export default function Home() {
               </p>
               <p className="text-lg">
                 When I'm not coding, you can find me hiking, reading tech blogs,
-                or contributing to open-source projects.
+                or gaming.
               </p>
             </div>
             <div className="grid grid-cols-2 gap-6">

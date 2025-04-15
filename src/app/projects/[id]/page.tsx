@@ -3,7 +3,7 @@ import Image from "next/image";
 import { notFound } from "next/navigation";
 import { projects } from "@/lib/data";
 import { Badge } from "@/components/ui/badge";
-import { Github, ArrowLeft } from "lucide-react";
+import { Github, ArrowLeft, Youtube } from "lucide-react";
 import { Project } from "@/lib/data";
 import { ProjectShowcase } from "@/components/project-showcase";
 import { RelatedProjects } from "@/components/related-projects";
@@ -75,6 +75,18 @@ export default async function ProjectPage({ params }: Params) {
             >
               <Github className="h-5 w-5" />
               View on GitHub
+            </Link>
+          )}
+
+          {project.youtube && (
+            <Link
+              href={project.youtube}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-2 bg-secondary hover:bg-secondary/80 text-secondary-foreground px-4 py-2 rounded-md transition-colors"
+            >
+              <Youtube className="h-5 w-5" />
+              View on Youtube
             </Link>
           )}
         </div>

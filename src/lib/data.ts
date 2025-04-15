@@ -1,5 +1,3 @@
-// Adding your additional projects to the existing structure
-
 export type Project = {
   id: string;
   name: string;
@@ -8,6 +6,7 @@ export type Project = {
   technology: string[];
   image: string;
   category?: "school" | "tutorial" | "personal" | "work";
+  youtube?: string;
 };
 export type Job = {
   id: string;
@@ -24,6 +23,7 @@ export const projects: Project[] = [
     id: "js-benchmark",
     name: "JS Benchmark",
     github: "https://github.com/EdwinTJ/js-benchmark",
+    youtube: "https://youtu.be/9cNJUL1_alg",
     description:
       "A performance testing tool for JavaScript code that compares execution time across different implementations. Allows developers to identify bottlenecks and optimize code for better performance. Includes visual reports and comparison charts.",
     technology: [
@@ -38,21 +38,26 @@ export const projects: Project[] = [
     category: "personal",
   },
   {
-    id: "ecommerce-platform",
-    name: "E-commerce Platform",
+    id: "csv-upload-display",
+    name: "CSV Upload & Display Application",
+    github: "https://github.com/EdwinTJ/uploadFile",
+    youtube: "https://www.youtube.com/watch?v=QkMlqJgqCq4",
     description:
-      "A full-featured e-commerce platform with product management, shopping cart, payment processing, and order tracking. Implemented responsive design and optimized for performance.",
+      "A full-stack web application that enables users to upload CSV files containing structured data and displays the information as interactive, filterable cards on a responsive interface. Features include secure file uploads, automatic data transformation, real-time filtering, and a responsive card-based UI.",
     technology: [
+      "TypeScript",
       "React",
       "Node.js",
       "Express",
-      "MongoDB",
-      "Stripe API",
-      "Redux",
-      "AWS S3",
+      "RESTful API",
+      "CSS3",
+      "HTML5",
+      "pnpm",
+      "Multer",
+      "Monorepo",
     ],
-    image: "/placeholder.svg?height=600&width=800",
-    category: "tutorial",
+    image: "/CSV.png?height=600&width=800",
+    category: "personal",
   },
   {
     id: "task-management-app",
