@@ -1,10 +1,9 @@
 "use client";
-
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { useRef, useEffect, useState } from "react";
 import Link from "next/link";
-import { ArrowRight, Code, Database, Server } from "lucide-react";
+import { ArrowRight, Code, Database, Server, Award } from "lucide-react";
 
 export default function Home() {
   const [scrollY, setScrollY] = useState(0);
@@ -14,7 +13,6 @@ export default function Home() {
     const handleScroll = () => {
       setScrollY(window.scrollY);
     };
-
     window.addEventListener("scroll", handleScroll, { passive: true });
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
@@ -62,6 +60,11 @@ export default function Home() {
             </Button>
             <Button asChild variant="outline" size="lg">
               <Link href="/jobs">My Experience</Link>
+            </Button>
+            <Button asChild variant="secondary" size="lg">
+              <Link href="/certificates">
+                <Award className="mr-2 h-4 w-4" /> Certificates
+              </Link>
             </Button>
           </div>
         </div>
