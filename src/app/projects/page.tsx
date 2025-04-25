@@ -1,7 +1,13 @@
 import Link from "next/link";
 import Image from "next/image";
 import { projects } from "@/lib/data";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import {
+  Card,
+  CardContent,
+  CardHeader,
+  CardTitle,
+  CardFooter,
+} from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 
 export const metadata = {
@@ -34,6 +40,11 @@ export default function ProjectsPage() {
               </div>
               <CardHeader>
                 <CardTitle>{project.name}</CardTitle>
+                {project.role && (
+                  <p className="text-sm text-muted-foreground">
+                    {project.role}
+                  </p>
+                )}
               </CardHeader>
               <CardContent>
                 <p className="line-clamp-3 text-muted-foreground mb-4">
@@ -52,6 +63,21 @@ export default function ProjectsPage() {
                   )}
                 </div>
               </CardContent>
+              <CardFooter className="pt-0">
+                <div className="flex flex-wrap gap-2">
+                  {project.skills &&
+                    project.skills.slice(0, 2).map((skill) => (
+                      <Badge key={skill} variant="outline" className="text-xs">
+                        {skill}
+                      </Badge>
+                    ))}
+                  {project.skills && project.skills.length > 2 && (
+                    <Badge variant="outline" className="text-xs">
+                      +{project.skills.length - 2}
+                    </Badge>
+                  )}
+                </div>
+              </CardFooter>
             </Card>
           </Link>
         ))}

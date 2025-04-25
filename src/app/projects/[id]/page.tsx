@@ -3,7 +3,7 @@ import Image from "next/image";
 import { notFound } from "next/navigation";
 import { projects } from "@/lib/data";
 import { Badge } from "@/components/ui/badge";
-import { Github, ArrowLeft, Youtube } from "lucide-react";
+import { Github, ArrowLeft, Youtube, AppWindow } from "lucide-react";
 import { Project } from "@/lib/data";
 import { ProjectShowcase } from "@/components/project-showcase";
 import { RelatedProjects } from "@/components/related-projects";
@@ -77,6 +77,17 @@ export default async function ProjectPage({ params }: Params) {
               View on GitHub
             </Link>
           )}
+          {project.link && (
+            <Link
+              href={project.link}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-2 bg-secondary hover:bg-secondary/80 text-secondary-foreground px-4 py-2 rounded-md transition-colors"
+            >
+              <AppWindow className="h-5 w-5" />
+              View Live
+            </Link>
+          )}
 
           {project.youtube && (
             <Link
@@ -92,6 +103,11 @@ export default async function ProjectPage({ params }: Params) {
         </div>
 
         <div className="flex items-center text-muted-foreground mb-6">
+          {project.role && (
+            <Badge variant="outline" className="mr-2">
+              {project.role}
+            </Badge>
+          )}
           {project.category && (
             <Badge className="mr-2">
               {project.category.charAt(0).toUpperCase() +
@@ -102,6 +118,33 @@ export default async function ProjectPage({ params }: Params) {
 
         <p className="text-lg leading-relaxed mb-8">{project.description}</p>
 
+        {/* Responsibilities Section */}
+        {project.responsibilities && project.responsibilities.length > 0 && (
+          <div className="mb-8">
+            <h2 className="text-xl font-semibold mb-4">My Responsibilities</h2>
+            <ul className="list-disc pl-5 space-y-2">
+              {project.responsibilities.map((responsibility, index) => (
+                <li key={index}>{responsibility}</li>
+              ))}
+            </ul>
+          </div>
+        )}
+
+        {/* Skills Section */}
+        {project.skills && project.skills.length > 0 && (
+          <div className="mb-8">
+            <h2 className="text-xl font-semibold mb-4">Skills Demonstrated</h2>
+            <div className="flex flex-wrap gap-2">
+              {project.skills.map((skill) => (
+                <Badge key={skill} variant="secondary" className="px-3 py-1">
+                  {skill}
+                </Badge>
+              ))}
+            </div>
+          </div>
+        )}
+
+        {/* Technologies Section */}
         <div className="mb-8">
           <h2 className="text-xl font-semibold mb-4">Technologies Used</h2>
           <div className="flex flex-wrap gap-2">
@@ -113,17 +156,18 @@ export default async function ProjectPage({ params }: Params) {
           </div>
         </div>
 
-        {/* Add more project details here if needed */}
-        <div className="mb-8">
-          <h2 className="text-xl font-semibold mb-4">Key Features</h2>
-          <ul className="list-disc pl-5 space-y-2">
-            {generateFeaturesList(project).map(
-              (feature: string, index: number) => (
-                <li key={index}>{feature}</li>
-              )
-            )}
-          </ul>
-        </div>
+        {/* Deliverables Section */}
+        {project.deliverables && project.deliverables.length > 0 && (
+          <div className="mb-8">
+            <h2 className="text-xl font-semibold mb-4">Key Deliverables</h2>
+            <ul className="list-disc pl-5 space-y-2">
+              {project.deliverables.map((deliverable, index) => (
+                <li key={index}>{deliverable}</li>
+              ))}
+            </ul>
+          </div>
+        )}
+
         <div className="mb-8">
           <ProjectShowcase project={project} />
         </div>
@@ -142,23 +186,4 @@ export default async function ProjectPage({ params }: Params) {
       </div>
     </div>
   );
-}
-
-// Helper function to generate features based on the project description
-function generateFeaturesList(project: Project): string[] {
-  // Extract features from the description
-  const description = project.description;
-  const sentences = description.split(/\.\s+/);
-
-  // Filter out short sentences and those that don't seem like features
-  return sentences
-    .filter(
-      (sentence) =>
-        sentence.length > 15 &&
-        !sentence.toLowerCase().includes("developed") &&
-        !sentence.toLowerCase().includes("created") &&
-        !sentence.toLowerCase().startsWith("a ") &&
-        !sentence.toLowerCase().startsWith("an ")
-    )
-    .map((sentence) => sentence.trim() + (sentence.endsWith(".") ? "" : "."));
 }
