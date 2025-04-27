@@ -4,8 +4,6 @@ import { notFound } from "next/navigation";
 import { projects } from "@/lib/data";
 import { Badge } from "@/components/ui/badge";
 import { Github, ArrowLeft, Youtube, AppWindow } from "lucide-react";
-import { Project } from "@/lib/data";
-import { ProjectShowcase } from "@/components/project-showcase";
 import { RelatedProjects } from "@/components/related-projects";
 
 type Params = {
@@ -167,10 +165,6 @@ export default async function ProjectPage({ params }: Params) {
             </ul>
           </div>
         )}
-
-        <div className="mb-8">
-          <ProjectShowcase project={project} />
-        </div>
 
         <div className="border-t pt-8">
           <Link

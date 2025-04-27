@@ -7,7 +7,6 @@ export type Job = {
   startDate: string;
   endDate: string;
 };
-
 export type Project = {
   id: string;
   name: string;
@@ -25,6 +24,49 @@ export type Project = {
 };
 
 export const projects: Project[] = [
+  {
+    id: "github-activity-cli",
+    name: "GitHub Activity CLI",
+    github: "https://github.com/EdwinTJ/githubActivity",
+    youtube: "https://www.youtube.com/watch?v=WaBoXp6c-vU",
+    role: "Full Stack Developer",
+    description:
+      "A command-line tool built with Node.js that fetches and displays GitHub users' recent activity directly in the terminal. Users can quickly check any GitHub profile's latest contributions without opening a browser, with results formatted for easy reading.",
+    responsibilities: [
+      "Designed and implemented a CLI application using pure Node.js",
+      "Built HTTP requests using native https module without external dependencies",
+      "Implemented asynchronous data handling with event-driven architecture",
+      "Created a user-friendly event formatter for different GitHub activity types",
+      "Implemented robust error handling for network and API requests",
+    ],
+    skills: [
+      "Node.js",
+      "JavaScript",
+      "CLI Development",
+      "API Integration",
+      "Asynchronous Programming",
+      "Event-Driven Architecture",
+      "Error Handling",
+      "HTTP Requests",
+      "Data Transformation",
+    ],
+    deliverables: [
+      "Fully functional CLI that retrieves GitHub activity data",
+      "Human-readable output formatter for various GitHub event types",
+      "Robust error handling for API failures and invalid inputs",
+      "Clean, well-documented codebase with modular design",
+      "Comprehensive README with usage instructions",
+    ],
+    technology: [
+      "Node.js",
+      "JavaScript",
+      "readline Module",
+      "https Module",
+      "GitHub API",
+    ],
+    image: "/projects/running.webp?height=600&width=800",
+    category: "personal",
+  },
   {
     id: "beehive-hub",
     name: "Beehive Hub",
@@ -69,7 +111,7 @@ export const projects: Project[] = [
       "JavaScript/TypeScript",
       "Responsive Design",
     ],
-    image: "/beehive-hub.webp?height=600&width=800",
+    image: "/projects/beehive-hub.webp?height=600&width=800",
     category: "personal",
   },
   {
@@ -110,7 +152,7 @@ export const projects: Project[] = [
       "CSS",
       "Browser APIs",
     ],
-    image: "/JS_Benchmark.png?height=600&width=800",
+    image: "/projects/JS_Benchmark.png?height=600&width=800",
     category: "personal",
   },
   {
@@ -157,7 +199,7 @@ export const projects: Project[] = [
       "Multer",
       "Monorepo",
     ],
-    image: "/CSV.png?height=600&width=800",
+    image: "/projects/CSV.png?height=600&width=800",
     category: "personal",
   },
   {
