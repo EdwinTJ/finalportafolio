@@ -24,6 +24,65 @@ export type Project = {
 };
 
 export const projects: Project[] = [
+    {
+    id: "ems-quote-app",
+    name: "EMS Quoting Web Application",
+    role: "Full Stack Developer",
+    youtube: "https://www.youtube.com/watch?v=6VmhBlnYwkQ",
+    description:
+      "A web application for Electronics Manufacturing Services (EMS) quoting, streamlining the process of converting Bill of Materials (BOM) files into digital quotes. Features secure authentication, dashboard, multi-step quote wizard, supplier allocation, RFQ management, file attachments, audit trails, and compliance-ready architecture for ITAR/CMMC.",
+    responsibilities: [
+      "Designed and implemented a multi-step quote creation wizard (BOM upload, mapping, validation)",
+      "Built dashboard for workload and recent quotes overview",
+      "Developed secure authentication and user management",
+      "Created quote workspace for part-level actions and risk management",
+      "Integrated automated/manual supplier allocation and override controls",
+      "Implemented RFQ center for supplier communication and bid management",
+      "Added file attachment support with versioning and audit logs",
+      "Ensured compliance-ready architecture for ITAR, CMMC, etc.",
+      "PDF quote generation and download",
+      "Supplier and settings management modules",
+    ],
+    skills: [
+      "Blazor (C#)",
+      "Tailwind CSS",
+      "ASP.NET Core Minimal API",
+      "Entity Framework Core",
+      "PostgreSQL",
+      "Nexar API",
+      "OpenAI API",
+      "Custom Authentication",
+      "Docker",
+      "GraphQL",
+      "Modern C# Patterns",
+      "Compliance & Audit Logging",
+    ],
+    deliverables: [
+      "Secure login/signup and authentication system",
+      "Dashboard with workload and recent quotes",
+      "Multi-step quote creation wizard",
+      "Quote workspace for part-level actions",
+      "Supplier allocation and override controls",
+      "RFQ center for supplier communication",
+      "File attachments with versioning and audit logs",
+      "Supplier and settings management",
+      "PDF quote generation and download",
+      "Compliance-ready architecture",
+    ],
+    technology: [
+      "Blazor (C#)",
+      "Tailwind CSS",
+      "ASP.NET Core Minimal API",
+      "PostgreSQL",
+      "Entity Framework Core",
+      "Nexar API",
+      "OpenAI API",
+      "Docker",
+      "GraphQL",
+    ],
+    image: "/projects/ems-quote-app.png?height=600&width=800",
+    category: "work",
+  },
   {
     id: "github-activity-cli",
     name: "GitHub Activity CLI",
@@ -71,7 +130,7 @@ export const projects: Project[] = [
     id: "beehive-hub",
     name: "Beehive Hub",
     role: "Frontend Developer & Full Stack Architect",
-    link: "https://beehivehub.it.com/",
+    github: "https://github.com/EdwinTJ/directory",
     description:
       "A comprehensive local business directory platform that connects businesses with community members. Showcases what makes local businesses unique, increases their visibility, and helps community members discover businesses that meet their specific needs.",
     responsibilities: [
@@ -437,18 +496,29 @@ export const projects: Project[] = [
     image: "/placeholder.svg?height=600&width=800",
     category: "personal",
   },
+
 ];
 
 export const jobs: Job[] = [
   {
-    id: "self-employed-web-developer",
-    name: "Web Developer",
-    company: "Self-employed / Freelance",
+    id: "software-developer-ems",
+    name: "Software Developer",
+    company: "EMS Solutions",
     description:
-      "Designed and developed custom websites and web applications for various clients. Managed the entire project lifecycle from client consultation and requirements gathering to design, development, testing, and deployment. Implemented responsive designs, SEO optimization, and performance enhancements while maintaining regular communication with clients to ensure satisfaction.",
+      "Improved engineering and manufacturing workflows by designing and implementing internal software tools and automation processes. Developed an automated data migration tool using C# and Playwright to reclassify and migrate parts within CETEC ERP, enabling category changes that were previously unsupported. Built a web application that combines CSV component location data with PDF-rendered PCB images to automatically calibrate layouts and generate accurate, searchable PCB PDFs. Implemented an affine transformation model using Least Squares Best Fit to map CAD (mm) coordinates to PDF (point) coordinates using overdetermined calibration data. Designed a multi-coordinate calibration system bridging browser pixel space, normalized UI coordinates, PDF point space, and CAD millimeter coordinates for consistent rendering and interaction.",
     logo: "/placeholder.svg?height=200&width=200",
-    startDate: "2024-05",
+    startDate: "2025-11",
     endDate: "Present",
+  },
+  {
+    id: "web-developer-manticore",
+    name: "Web Developer",
+    company: "Manticore Marketing",
+    description:
+      "Standardized new website builds by creating a detailed SOP covering plugin selection, feature enable/disable workflows, and coding standards. Reduced project setup time and improved team onboarding efficiency. Optimized site performance with caching, image compression, and minified assets boosted PageSpeed Insights scores, leading to better SEO rankings and faster user experiences.",
+    logo: "/placeholder.svg?height=200&width=200",
+    startDate: "2025-07",
+    endDate: "2025-10",
   },
   {
     id: "flex-operator-schreiber",
@@ -458,6 +528,16 @@ export const jobs: Job[] = [
       "Managed multiple production processes and equipment in a fast-paced food manufacturing environment. Demonstrated adaptability by learning diverse operational roles and optimizing workflows. Mentored new team members and ensured adherence to safety protocols and quality standards.",
     logo: "/placeholder.svg?height=200&width=200",
     startDate: "2022-01",
+    endDate: "2025-07",
+  },
+  {
+    id: "self-employed-web-developer",
+    name: "Web Developer",
+    company: "Self-employed / Freelance",
+    description:
+      "Designed and developed custom websites and web applications for various clients. Managed the entire project lifecycle from client consultation and requirements gathering to design, development, testing, and deployment. Implemented responsive designs, SEO optimization, and performance enhancements while maintaining regular communication with clients to ensure satisfaction.",
+    logo: "/placeholder.svg?height=200&width=200",
+    startDate: "2024-05",
     endDate: "Present",
   },
   {

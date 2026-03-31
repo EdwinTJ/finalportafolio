@@ -77,18 +77,19 @@ export default function Home() {
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
               <p className="text-lg mb-6">
-                I'm a passionate software engineer with expertise in building
-                scalable web applications and distributed systems.
+                I’m a software engineer focused on building practical, reliable systems that improve real-world workflows. I enjoy designing and delivering internal tools that automate processes, reduce manual work, and improve system reliability.
               </p>
               <p className="text-lg mb-6">
-                My technical skills include JavaScript/TypeScript, React,
-                Node.js, Python, and cloud technologies like AWS and Google
-                Cloud. I'm always eager to learn new technologies and improve my
-                skills.
+                Recent experience: <br />
+                <b>Software Developer, EMS Solutions (2025–Present):</b> Internal tools, automation, and data migration for engineering/manufacturing. <br />
+                <b>Web Developer, Manticore Marketing (2025):</b> Website standardization, performance optimization, and onboarding efficiency.
+              </p>
+              <p className="text-lg mb-6">
+                <b>Education:</b> B.S. Computer Science, Utah State University (2022–2026).<br />
+                Certificate: Web & Mobile Development, Bridgerland Technical College (2021–2022).
               </p>
               <p className="text-lg">
-                When I'm not coding, you can find me hiking, reading tech blogs,
-                or gaming.
+                I love solving problems, automating workflows, and working on systems that have a measurable impact.
               </p>
             </div>
             <div className="grid grid-cols-2 gap-6">
@@ -100,12 +101,12 @@ export default function Home() {
               <div className="bg-muted rounded-lg p-6 text-center">
                 <Server className="h-10 w-10 mx-auto mb-4 text-primary" />
                 <h3 className="text-xl font-medium mb-2">Backend</h3>
-                <p>Node.js, Express, Python, Django</p>
+                <p>.NET, Node.js, C#, Python</p>
               </div>
               <div className="bg-muted rounded-lg p-6 text-center">
                 <Database className="h-10 w-10 mx-auto mb-4 text-primary" />
                 <h3 className="text-xl font-medium mb-2">Database</h3>
-                <p>PostgreSQL, MongoDB, Redis</p>
+                <p>PostgreSQL, Supabase, SQL</p>
               </div>
               <div className="bg-muted rounded-lg p-6 text-center">
                 <svg
@@ -125,8 +126,8 @@ export default function Home() {
                   <polyline points="3.27 6.96 12 12.01 20.73 6.96" />
                   <line x1="12" y1="22.08" x2="12" y2="12" />
                 </svg>
-                <h3 className="text-xl font-medium mb-2">DevOps</h3>
-                <p>Docker, Kubernetes, CI/CD, AWS</p>
+                <h3 className="text-xl font-medium mb-2">DevOps & Tools</h3>
+                <p>Docker, AWS EC2, Playwright, Git</p>
               </div>
             </div>
           </div>
