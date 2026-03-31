@@ -84,6 +84,44 @@ export const projects: Project[] = [
     category: "work",
   },
   {
+  "id": "full-stack-docker-aws-01",
+  "name": "Cloud-Native .NET & Next.js Application",
+  "youtube": "https://www.youtube.com/watch?v=_rXtPqm_Bdw",
+  "role": "Full-Stack Developer",
+  "description": "Designed and deployed a scalable full-stack application leveraging a containerized architecture. Managed the end-to-end lifecycle from local development in Docker to cloud production on AWS EC2.",
+  "responsibilities": [
+    "Architected a RESTful API using .NET 8 with an emphasis on clean architecture and performance.",
+    "Developed a responsive, SEO-friendly frontend using Next.js and Tailwind CSS.",
+    "Containerized the application and database layers using Docker Compose for consistent environment orchestration.",
+    "Configured and managed an AWS EC2 Ubuntu instance, including security groups and Docker runtime installation.",
+    "Implemented data persistence and relational schema design using PostgreSQL."
+  ],
+  "skills": [
+    "Cloud Infrastructure",
+    "Containerization",
+    "API Design",
+    "Database Management",
+    "DevOps"
+  ],
+  "deliverables": [
+    "Functional Web Application hosted on AWS",
+    "Containerized Microservices Architecture",
+    "Documented REST API Endpoints",
+    "Project Demo Video"
+  ],
+  "technology": [
+    ".NET 8",
+    "Next.js",
+    "Docker",
+    "PostgreSQL",
+    "AWS EC2",
+    "Ubuntu",
+    "Entity Framework Core"
+  ],
+  "image": "/images/projects/NETandNextJS.png",
+  "category": "personal",
+},
+  {
     id: "github-activity-cli",
     name: "GitHub Activity CLI",
     github: "https://github.com/EdwinTJ/githubActivity",
