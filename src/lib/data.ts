@@ -118,7 +118,7 @@ export const projects: Project[] = [
     "Ubuntu",
     "Entity Framework Core"
   ],
-  "image": "/images/projects/NETandNextJS.png",
+  "image": "/projects/NETandNextJS.png",
   "category": "personal",
 },
   {
