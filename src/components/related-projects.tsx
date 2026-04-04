@@ -60,6 +60,7 @@ export function RelatedProjects({
                   src={project.image || "/placeholder.svg"}
                   alt={project.name}
                   fill
+                  unoptimized={/\.gif(\?|$)/i.test(project.image || "")}
                   className="object-cover"
                 />
               </div>

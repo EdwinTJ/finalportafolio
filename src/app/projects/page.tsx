@@ -35,6 +35,7 @@ export default function ProjectsPage() {
                   src={project.image || "/placeholder.svg"}
                   alt={project.name}
                   fill
+                  unoptimized={/\.gif(\?|$)/i.test(project.image || "")}
                   className="object-cover transition-transform hover:scale-105"
                 />
               </div>
