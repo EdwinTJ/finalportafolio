@@ -25,6 +25,47 @@ export type Project = {
 
 export const projects: Project[] = [
     {
+  "id": "pcb-station",
+  "name": "Gerber Render",
+  "role": "Full Stack Developer",
+  "youtube" : "https://www.youtube.com/watch?v=O32hXzWv71E",
+  "description": "A PCB Gerber viewer and rendering application built with .NET and Blazor. The project uploads manufacturing files, identifies PCB layers, parses Gerber and drill data, and renders an interactive board preview in the browser.",
+  "responsibilities": [
+    "Built a multi-stage pipeline to read, parse, and process Gerber and drill files",
+    "Implemented automatic layer identification using filename and CAD-specific matching rules",
+    "Developed PCB rendering logic that converts parsed board data into SVG previews",
+    "Created a web interface for uploading PCB files and viewing the final render",
+    "Structured the application into focused modules for parsing, plotting, rendering, and core orchestration",
+    "Wrote and maintained tests for parser and layer-identification behavior"
+  ],
+  "skills": [
+    "System Design",
+    "File Parsing",
+    "Pattern Matching",
+    "SVG Rendering",
+    "Real-Time UI",
+    "Unit Testing",
+    "Separation of Concerns"
+  ],
+  "deliverables": [
+    "Web-based Gerber file upload and preview flow",
+    "Automatic PCB layer detection engine",
+    "Parsing pipeline for Gerber and drill files",
+    "SVG-based board rendering output",
+    "Reusable core logic separated from the UI"
+  ],
+  "technology": [
+    "C#",
+    ".NET",
+    "Blazor",
+    "xUnit",
+    "Gerber Files",
+    "SVG"
+  ],
+  "image": "/projects/PcbStation.gif",
+  "category": "personal"
+},
+{
     id: "ems-quote-app",
     name: "EMS Quoting Web Application",
     role: "Full Stack Developer",
