@@ -24,11 +24,54 @@ export type Project = {
 };
 
 export const projects: Project[] = [
-    {
+{
+"id": "climate-sensor-simulation",
+"name": "Climate Sensor Simulation Platform",
+"role": "Full Stack Developer",
+"youtube": "",
+"github": "https://github.com/EdwinTJ/climate-sensor-simulation",
+"description": "An interactive climate simulation platform built with .NET Blazor and JavaScript. The application lets users place virtual hardware sensors on a grid, apply localized weather conditions like rain, snow, and high humidity, and observe real-time sensor responses through a live dashboard.",
+"responsibilities": [
+"Designed and built a grid-based simulation system for climate zones and virtual sensor placement",
+"Implemented area selection logic to apply climate effects to specific regions instead of the full map",
+"Developed sensor state and reading updates in C# service-layer logic for real-time simulation behavior",
+"Built interactive canvas rendering and user input handling in JavaScript with Blazor JS interop",
+"Created a split-panel UI with controls, hardware palette, and live per-sensor statistics",
+"Integrated unique SVG hardware visuals by sensor type for clearer simulation feedback"
+],
+"skills": [
+"System Design",
+"Simulation Modeling",
+"Real-Time State Management",
+"Interactive UI/UX",
+"Canvas Rendering",
+"Blazor JS Interop",
+"Separation of Concerns"
+],
+"deliverables": [
+"Web application for placing and managing virtual climate sensors",
+"Grid-based environment with zone-level climate simulation controls",
+"Real-time sensor metrics panel linked to climate changes on the canvas",
+"JavaScript canvas engine for rendering, selection, and interaction",
+"Modular C# architecture separating models, services, and UI concerns"
+],
+"technology": [
+"C#",
+".NET",
+"Blazor",
+"JavaScript",
+"HTML5 Canvas",
+"CSS",
+"SVG"
+],
+"image": "/projects/ClimateSensor.gif",
+"category": "personal"
+},
+{
   "id": "pcb-station",
   "name": "Gerber Render",
   "role": "Full Stack Developer",
-  "youtube" : "https://www.youtube.com/watch?v=O32hXzWv71E",
+  "youtube": "https://www.youtube.com/watch?v=O32hXzWv71E",
   "description": "A PCB Gerber viewer and rendering application built with .NET and Blazor. The project uploads manufacturing files, identifies PCB layers, parses Gerber and drill data, and renders an interactive board preview in the browser.",
   "responsibilities": [
     "Built a multi-stage pipeline to read, parse, and process Gerber and drill files",
@@ -62,7 +105,7 @@ export const projects: Project[] = [
     "Gerber Files",
     "SVG"
   ],
-  "image": "/projects/PcbStation.gif",
+  "image": "/projects/PcbStation.png",
   "category": "personal"
 },
 {
