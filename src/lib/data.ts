@@ -25,6 +25,47 @@ export type Project = {
 
 export const projects: Project[] = [
 {
+  id: "ai2palette",
+  name: "AI2Palette",
+  link: "https://ai2palette.netlify.app/",
+  youtube: "https://youtu.be/4w4e7WU_kso?si=UmQdfwBojumkHQhI",
+  role: "Frontend Developer",
+  description:
+    "A lightweight palette visualization tool built with Nuxt and Vue that turns AI-generated color text into a clean, interactive preview. It parses hex values from pasted content, removes duplicates, normalizes shorthand colors, and helps designers, founders, and developers instantly see and reuse AI-generated palettes.",
+  responsibilities: [
+    "Built a text-to-palette workflow that extracts hex colors from AI-generated input",
+    "Implemented normalization for shorthand and full hex values with duplicate filtering",
+    "Created a results view that renders colors visually instead of leaving them as plain text",
+    "Added copy-to-clipboard support for individual hex values",
+    "Built export options for JSON and CSS variables",
+    "Wrote tests for palette parsing and color transformation logic",
+  ],
+  skills: [
+    "Frontend Development",
+    "UI Engineering",
+    "Text Parsing",
+    "Design Systems",
+    "Testing",
+    "Product Thinking",
+  ],
+  deliverables: [
+    "AI-to-visual color palette preview workflow",
+    "Copyable hex color output",
+    "JSON export for palette data",
+    "CSS variable export for theming",
+    "Test coverage for palette parsing logic",
+  ],
+  technology: [
+    "Nuxt 4",
+    "Vue 3",
+    "TypeScript",
+    "Tailwind CSS 4",
+    "Vitest",
+  ],
+  image: "/projects/AI2PaletteFast.gif",
+  category: "personal",
+},
+{
 "id": "climate-sensor-simulation",
 "name": "Climate Sensor Simulation Platform",
 "role": "Full Stack Developer",
