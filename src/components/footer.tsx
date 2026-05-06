@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Github, Linkedin } from "lucide-react";
+import { Github, Linkedin, Youtube } from "lucide-react";
 
 export default function Footer() {
   return (
@@ -26,6 +26,15 @@ export default function Footer() {
           >
             <Linkedin className="h-5 w-5" />
             <span className="sr-only">LinkedIn</span>
+          </Link>
+          <Link
+            href="https://www.youtube.com/@Edwin-Software"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-muted-foreground hover:text-foreground transition-colors"
+          >
+            <Youtube className="h-5 w-5" />
+            <span className="sr-only">YouTube</span>
           </Link>
         </div>
       </div>
